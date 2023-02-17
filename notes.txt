@@ -1,0 +1,12 @@
+Module Wrapper :  This process is automatically done by nodejs
+Example :
+(function(exports, require, module, __filename, __dirname()){ //This line is module wrapper.
+    const firstObject = {
+        name : "Pratik",
+        age : 22,
+        developer : true
+    }
+
+    console.log(exports, require, module, __filename, __dirname);
+    module.exports =  firstObject;
+}) // and this line
